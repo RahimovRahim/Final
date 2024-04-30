@@ -1,0 +1,32 @@
+﻿@using FinalProject.Areas.Admin.ViewModels
+@model UserViewModel
+@{
+    ViewData["Title"] = "UpdateRole";
+}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Create new brand</h4>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">Username:@Model.User.UserName</div>
+
+                        <label for="Roles">Roles</label>
+                        @foreach (var role in ViewBag.AllRoles)
+                        {
+                            <label for="Role">@role</label>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        }
+
+                       
+
+
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button asp-action="Index" class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

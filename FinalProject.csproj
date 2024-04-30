@@ -1,0 +1,103 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Controllers\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Blog\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Views\Shared\" />
+    <None Remove="Context\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Views\Shop\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Enums\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Views\User\" />
+    <None Remove="Areas\Admin\ViewModels\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="Helpers\Extensions\" />
+    <None Remove="Areas\Admin\Views\Brand\" />
+    <None Remove="Areas\Admin\Views\Blog\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Blog\" />
+    <None Remove="Views\Shared\Components\Header\" />
+    <None Remove="Views\Shared\Components\Product\" />
+    <None Remove="Areas\Admin\Views\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Context\" />
+    <Folder Include="wwwroot\adminAssets\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Views\Shop\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Areas\Admin\ViewModels\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="Helpers\Extensions\" />
+    <Folder Include="Areas\Admin\Views\Brand\" />
+    <Folder Include="Areas\Admin\Views\Blog\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Blog\" />
+    <Folder Include="Views\Shared\Components\Header\" />
+    <Folder Include="Views\Shared\Components\Product\" />
+    <Folder Include="wwwroot\backend\" />
+    <Folder Include="wwwroot\backend\js\" />
+    <Folder Include="Areas\Admin\Views\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\adminAssets\" />
+    <Content Remove="wwwroot\backend\" />
+    <Content Remove="wwwroot\backend\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.5.0" />
+    <PackageReference Include="MimeKit" Version="4.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.28">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.28" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+</Project>
